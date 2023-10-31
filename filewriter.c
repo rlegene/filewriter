@@ -59,7 +59,7 @@ int main(int argc, char **argv)
             break;
         }
         if (bytesread == -1) /* error */
-            error("read");
+            error(argv[1]);
         /* if the filename has changed inode, close it and reopen */
         if (fd > -1)
         {
